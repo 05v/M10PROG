@@ -25,7 +25,7 @@ class Pencil
             $this->sharpness = 0;
         }
 
-        if ($this->color != null) {
+        if (!empty($this->color)) {
             echo "Color: {$this->color} <br> Sharpness: {$this->sharpness}% <br> Length: " . round($this->length, 1) . "cm";
         } else {
             echo "Sharpness: {$this->sharpness}% <br> Length: " . round($this->length, 1) . "cm";
